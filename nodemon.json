@@ -1,0 +1,6 @@
+{
+	"watch": ["src"],
+	"ext": "ts,json,tsx",
+	"ignore": ["src/**/*.test.ts{,x}"],
+	"exec": "node -r ts-node/register src/main.ts"
+}

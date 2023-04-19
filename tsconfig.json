@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"outDir": "./lib",
+		"baseUrl": ".",
+		"rootDir": "./src",
+		"declaration": false,
+		"target": "ESNext",
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"strictNullChecks": true,
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react-jsxdev",
+		"downlevelIteration": true,
+		"moduleResolution": "NodeNext",
+		"noImplicitAny": true,
+		"lib": [
+			"ESNext"
+		],
+		"sourceMap": true
+	}
+}
