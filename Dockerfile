@@ -1,4 +1,4 @@
-FROM node:18.16.0-alpine3.17 as build
+FROM node:20.1.0-alpine3.17 as build
 
 RUN mkdir -p /app
 WORKDIR /app
@@ -8,7 +8,7 @@ COPY src /app/src
 RUN yarn
 RUN yarn build
 
-FROM node:18.16.0-alpine3.17 as prod
+FROM node:20.1.0-alpine3.17 as prod
 
 RUN mkdir -p /app
 WORKDIR /app
@@ -16,7 +16,7 @@ COPY package.json yarn.lock .yarnrc.yml /app/
 COPY .yarn /app/.yarn
 RUN yarn workspaces focus --all --production
 
-FROM node:18.16.0-alpine3.17 as app
+FROM node:20.1.0-alpine3.17 as app
 
 RUN mkdir -p /app
 WORKDIR /app
