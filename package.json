@@ -4,7 +4,7 @@
   "description": "Express Typescript API server boilerplate",
   "main": "lib/main.js",
   "repository": "git@github.com:tranvansang/express-boilerplate.git",
-  "author": "Tran Sang <me@transa.ng>",
+  "author": "Sang Tran <t@sang.jp>",
   "license": "MIT",
   "packageManager": "yarn@3.5.0",
   "scripts": {
