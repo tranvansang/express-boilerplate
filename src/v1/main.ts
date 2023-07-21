@@ -52,7 +52,7 @@ router.use((_, res) => {
 // @ts-ignore
 router.use((err: Error, _req, res, _next) => {
 	console.error(err)
-	if (err instanceof ServerError) res.status(err.status).json({message: err.message})
-	else res.status(500).json({message: 'Internal Server Error'})
+	if (err instanceof ServerError) res.status(err.status).json({message: err.message, code: err.code})
+	else res.status(500).json({message: 'Internal Server Error', code: 'unknown'})
 })
 export default router
